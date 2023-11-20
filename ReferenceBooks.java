@@ -37,14 +37,13 @@ public class ReferenceBooks extends BookStore {
 	}
 
 	public Chapter mostPage() {
-		int count = 0;
+		int count = -1;
 		Chapter books = null;
 		for (Chapter chapter : chapters) {
 			if (chapter.getPagenum() > count) {
 				books = chapter;
 				count = chapter.getPagenum();
 			}
-			count++;
 		}
 		return books;
 	}
