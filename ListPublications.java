@@ -103,7 +103,9 @@ public class ListPublications {
 		List<Chapter> list4 = new ArrayList<>();
 		list4.add(c2);
 		list4.add(c3);
-
+		
+		ReferenceBooks books= new ReferenceBooks(null, null, 0, 0, 0, null, list1);
+		
 		BookStore tapChi1 = new Magazine("Tap Chi Giao Duc", "Tran Thi Binh", 2022, 51000, 50, "GT");
 		BookStore tapChi2 = new Magazine("Tap Chi TS", "Tran Thi C", 2020, 530000, 70, "TS");
 		BookStore tapChi3 = new Magazine("Tap Chi CT", "Tran Thi D", 2021, 25000, 30, "CT");
@@ -136,6 +138,7 @@ public class ListPublications {
 //		System.out.println(listPublications.publishedOneYear(2021));
 //		listPublications.sort();
 //		System.out.println(listPublications);
-		System.out.println(listPublications.filterYear());
+		System.out.println(books.mostPage());
+//		System.out.println(listPublications.filterYear());
 	}
 }
