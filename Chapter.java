@@ -17,9 +17,9 @@ public class Chapter {
 		return pagenum;
 	}
 
-//	@Override
-//	public String toString() {
-//		return "title=" + title + ", pagenum=" + pagenum;
-//	}
+	@Override
+	public String toString() {
+		return "title=" + title + ", pagenum=" + pagenum;
+	}
 
 }
